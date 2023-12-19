@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bundle & Save</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bundle & Save</h1>
+  </header>
+
+  <main>
+    <div class="box" id="box1">
+        <input type="radio" name="selectedBox" value="box1" class="selected-radio">
+      <h2>1 Pair</h2>
+      <p>DKK 195.00</p>
+      <p>50% OFF</p>
+      
+    </div>
+
+    <div class="box" id="box2">
+        <input type="radio" name="selectedBox" value="box2" class="selected-radio">
+      <h2>2 Pair</h2>
+      <p>DKK 345.00</p>
+      <p>Most popular 40% OFF</p>
+      <div class="options">
+        <span class="option-number">1</span>
+        <select class="sizeDropdown">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+
+        </select>
+        <select class="colorDropdown">
+            <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+         
+        </select>
+      </div>
+      <div class="options">
+        <span class="option-number">2</span>
+        <select class="sizeDropdown">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+  
+         
+        </select>
+        <select class="colorDropdown">
+            <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          
+        </select>
+      </div>
+     
+    </div>
+
+    <div class="box" id="box3">
+        <input type="radio" name="selectedBox" value="box3" class="selected-radio">
+        <h2>3 Pair</h2>
+      <p>DKK 528.00</p>
+      <p>60% OFF</p>
+      
+    </div>
+
+    <p class="shipping">Free 2 Day Shipping</p>
+    <p id="total">Total: DKK 547.00</p>
+    <button id="addToCart">+ Add to Cart</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

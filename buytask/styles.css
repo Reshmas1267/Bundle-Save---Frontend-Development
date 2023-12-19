@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  color: green;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.box:hover {
+  border-color: green;
+}
+
+
+.box h2 {
+  margin-bottom: 10px;
+}
+
+.box p {
+  margin-bottom: 5px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option-number {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.sizeDropdown,
+.colorDropdown {
+  width: 45%;
+}
+
+.colorDropdown {
+  margin-left: 10px;
+}
+
+.shipping {
+  color: green;
+  margin-top: 20px;
+}
+
+#total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#addToCart {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addToCart:hover {
+  background-color: darkgreen;
+}
+
+
+input[type="radio"]:checked+label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    width: 400px;
+  }
+}
